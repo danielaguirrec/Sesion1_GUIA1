@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/formulario"
+              android:textSize="20sp"
+              android:gravity="center_horizontal"
+              android:textStyle="normal"
+              android:textColor="@color/blue"
+              android:textAllCaps="false"
+              android:id="@+id/tTitulo"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/nombre"/>
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="20dp"
+                  android:id="@+id/etNombre"/>
+
+
+    </LinearLayout>
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/etCorreo"
+              android:inputType="textEmailAddress"
+              android:hint="@string/correo"
+    />
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/etCedula"
+              android:inputType="number"
+              android:hint="@string/Cedula"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/bnGuardar" android:textAllCaps="false"
+            android:text="@string/guardar"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvResultado" android:textColor="@color/blueviolet"/>
+
+
+</LinearLayout>
